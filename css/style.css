@@ -35,17 +35,10 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-  }
-
-
-.text {
 	position: relative;
 	width: 50%;
-	
-	/* color: #1e1e1e; */
 	font-size: 2.3rem;
 	text-align: right;
-	
 	filter: url(#text);
 	transition:  .25s ease-in;
 }
@@ -64,12 +57,6 @@
 	
 }
 
-   .text:hover {
-        /* background: #62ccff; */
-        background-color: #637eff;
-        width: 100%;
-        height: 100%;
-    }
 /* STOPHERE */
 body{
     margin: 0;
