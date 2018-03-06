@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -12,118 +13,104 @@
 </head>
 
 <body>
-    <header>
+    <header >
         <h1>Ninti Chance</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">Projects</a>
-            <a href="interest.html">Interests</a>
-            <a href="resume.html">Resume</a>
+            <a href="#intro">Home <span>|</span></a>
+            <a href="#projects"> Projects <span>|</span></a>
+            <a href="#interests"> Interests</a>
         </nav>
     </header>
-    <div class="intro">
-        <h2></h2>
-
-        <!-- <div>Photo by: <a href="#">Jean</a>  Header by <a href="#">Diane and Ninti</a></div> -->
-
-
+    <div class="intro" id="intro">
+        <div class="socialTop">
+            <a class="top" href="https://www.linkedin.com/in/ninti-chance-13a15a122/" target="_blank">
+                <img src="https://i.imgur.com/o8a59rU.png" target="_blank">
+            </a>
+            <a class="top" href="https://www.instagram.com/ninti.wav/" target="_blank">
+                <img src="https://i.imgur.com/9kPIdha.png">
+            </a>
+            <a class="top" href="https://github.com/nintichance" target="_blank">
+                <img src="https://i.imgur.com/MMvcGN0.png">
+            </a>
+            <a class="top" href="mailto:nintichance@gmail.com" target="_blank">
+                <img src="https://i.imgur.com/pPByLWt.png">
+            </a>
+        </div>
+        <div class="button"><a href="#code">Code With Me</a></div>
     </div>
 
     <div class="space">
         Hello, I bring design to the screen, logic to the code, and people to their potential.
     </div>
-    <div class="projects">
-        <!-- <div class="info">
-            <ul>
-                <ol>CSS</ol><ol>HTML</ol><ol>JavaScript</ol><ol>jQuery</ol><ol>Express</ol><ol>Node.js</ol>
-                <ol>MongoDB</ol><ol>Mongoose</ol><ol>React</ol><ol>Redux</ol><ol>Ruby</ol><ol>Rails</ol><ol>PostgreSQL</ol>
-            </ul>
-        </div> -->
+    <div class="projects" id="projects">
         <div class="container">
-            <a class="image" href="https://voyago.herokuapp.com/">
-                <img class="img" src="https://i.imgur.com/XqQDJl8.png?1">
+                <a class="image" href="https://voyago.herokuapp.com/">
+                    <img class="img" src="https://i.imgur.com/XqQDJl8.png?1">
+               
+                <div class="overlay">
+                        <div class="text"><div><h1>Voyago</h1></div><p>Ruby</p><p>Rails</p><p>React</p><p>PostgreSQL</p></div>
+                </div>
             </a>
-            <div class="overlay">
-                <div class="text">
-                        <a href="https://voyago.herokuapp.com/">
-                    <div>
-                        Vojago
-                    </div>Team Project, React, Ruby, Rails, PostgreSQL</div>
-                </a>
             </div>
-        </div>
+            <div class="container">
+                    <a class="image" href="https://chic-tracker.herokuapp.com/">
+                        <img class="img" src="https://i.imgur.com/zdlF7rB.png"
+                        />
+                    
+                    <div class="overlay">
+                            <div class="text"><div><h1>Yello</h1></div><p>Ruby</p><p>Rails</p><p>React</p><p>PostgreSQL</p></div>
+                    </div>
+                </a>
+                </div>
         <div class="container">
             <a class="image" href="http://jeopardy-homepage.bitballoon.com/">
                 <img class="img" src="https://i.imgur.com/3Q4T5Kl.png?1">
-            </a>
+           
             <div class="overlay">
-
-                <div class="text">
-                        <a href="http://jeopardy-homepage.bitballoon.com/">
-                    <div>
-                        Jeopardy
-                    </div>jQuery, JavaScript, HTML, and CSS. </a>
-                </div>
-                
+             
+                <div class="text"><div><h1>Jeopardy</h1></div><p>JavaScript</p><p>jQuery</p><p>HTML</p><p>CSS</p></div>
             </div>
+        </a>
         </div>
         <div class="container">
             <a class="image" href="https://fri-end.herokuapp.com/">
                 <img class="img" src="https://i.imgur.com/5jsIq0o.png?1">
-            </a>
+           
             <div class="overlay">
-                <div class="text">
-                    <a href="https://fri-end.herokuapp.com/">
-                        <div>
-                            fr!end</div>Node.js, Express, Mongoose, MongoDB</div>
-                </a>
+                <div class="text"><div><h1>fr!end</h1></div><p>Node.js</p><p>Express.js</p><p>Handlebars.js</p><p>MongoDB</p></div>
             </div>
+        </a>
         </div>
         <div class="container">
-            <a class="image" href="https://cornfleur.herokuapp.com/">
-                <img class="img" src="https://i.imgur.com/SwQhu2z.png?1">
-            </a>
-            <div class="overlay">
-                <div class="text">
-                    <a href="https://cornfleur.herokuapp.com/">
-                        <div>sat.app</div>React.js, Node.js, Express, Mongoose, MongoDB</div>
-                </a>
-            </div>
-        </div>
-
-        <div class="container">
-            <a class="image" href="https://github.com/nintichance">
-                <img class="img" src="https://i.imgur.com/BMI3UCw.png" />
-            </a>
-            <div class="overlay">
-                <div class="text">
-                    <a href="https://github.com/nintichance">Ninti's Code</a>
+                <a class="image" href="https://github.com/nintichance">
+                    <img class="img" src="https://i.imgur.com/BMI3UCw.png"
+                    />
+                
+                <div class="overlay">
+                    <div class="text"><h1>Ninti's Code</h1></div>
                 </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <a class="image" href="#">
-                <img class="img" src="https://i.imgur.com/SuYQRrL.jpg?1" />
             </a>
-            <div class="overlay">
-                <div class="text">
-                    <div>
-                        yello!
-                        <div>Coming Soon... React, Ruby, Rails, PostgreSQL</div>
+            </div>
+        <div class="container">
+                <a class="image" href="https://earthshare-project.herokuapp.com/">
+                    <img class="img" src="https://i.imgur.com/mwaYpmr.png?1">
+              
+                <div class="overlay">
+                        <div class="text"><div><h1>GreenJobs</h1></div><p>MongoDB</p><p>Express.js</p><p>React.js</p><p>Node.js</p></div>
                     </div>
-                </div>
+                </a>
             </div>
-        </div>
 
     </div>
+
+
     <div class="space2"></div>
 
-    <div class="interests">
+    <div class="interests" id="interests">
         <div class="rowOne">
             <div class="gif">
                 <img src="https://i.imgur.com/7pQExkI.gif" />
-                <h1 class="one">Programming</h1>
+                <h1 class="one"><a href="https://github.com/nintichance">Programming</a></h1>
             </div>
             <div class="items">
                 <img src="https://i.imgur.com/GqUItOu.png" />
@@ -131,7 +118,7 @@
             </div>
             <div class="gif">
                 <img src="https://i.imgur.com/DEvyI59.gif" />
-                <h1 class="three">Writing</h1>
+                <h1 class="three"><a href="https://medium.com/@nintichance/javascript-the-webs-language-of-top-5-favorites-9c0edc88c9c">Writing</a></h1>
             </div>
         </div>
         <div class="rowTwo">
@@ -145,14 +132,12 @@
             </div>
             <div class="items">
                 <img src="https://i.imgur.com/tlDpyoz.png" />
-                <h1 class="six">Voice Acting</h1>
+                <h1 class="six"><a href="https://www.youtube.com/watch?v=R5HlB3fEV2o">Voice Acting</a></h1>
             </div>
         </div>
     </div>
-    <div class="contact">
-        <a name="code">
-            <h1>Code with me:</h1>
-        </a>
+    <div id="code" class="contact">
+       <h1>Code with me:</h1>
         <h2>478-461-6804</h2>
         <h2>nintichance@gmail.com</h2>
     </div>
@@ -167,7 +152,7 @@
             <a href="https://github.com/nintichance" target="_blank">
                 <img src="https://i.imgur.com/BMI3UCw.png">
             </a>
-            <a href="nintichance@gmail.com" target="_blank">
+            <a href="mailto:nintichance@gmail.com" target="_blank">
                 <img src="https://i.imgur.com/CDnFXbO.png">
             </a>
         </div>

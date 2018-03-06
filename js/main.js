@@ -8,9 +8,7 @@
                 
                 $('body > .intro').prepend('<div id="introImage"><img src="https://i.imgur.com/xgLtToC.png"/></div>')
             }
-            else{
-                $('body > .intro').append('<div class="button"><a href="#code">Code With Me</a></div>')
-            }
+          
         }
        
         checkSize()
