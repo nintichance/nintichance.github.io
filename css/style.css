@@ -1,7 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Fauna One', serif;
+
 }
 
 hr {
@@ -104,15 +106,23 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     background-position-x: center;
     color: black;
     font-size: 1.5em;
 }
+
+h3 > span {
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Londrina Outline', cursive;
+}
 .introInfo {
     width: 50vw;
+    background-color: rgba(87,87,235, 0.25);
+    border-radius: 4px;
+    margin-left: 25px;
+    color: white;
 }
-
 
 .projects {
     width: 100vw;
@@ -123,6 +133,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Handlee', cursive;
+
 }
 .projectRight{
     display: flex;
@@ -180,10 +192,9 @@ header {
     height: 80vh;
     width: 100vw;
     /* background-color: #62CCFF; */
-    font-family: 'Open Sans', sans-serif;
     background-size: cover;
     display: flex;
-    
+    font-family: 'Handlee', cursive;
     justify-content: center;
     align-items: center;
     background-attachment: fixed;
@@ -258,6 +269,16 @@ div>p {
     margin: 0px;
 }
 
+@media only screen and (max-width: 1039px){
+    footer{
+        height: 10vh;
+    }
+    a>img {
+        width: 4vw;
+        margin: 10px;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     header {
         height: 10vh;
@@ -265,8 +286,16 @@ div>p {
     .intro {
         background: none;
         background-color: #62CCFF;
+        align-items: center;
+        height: 85vh;
     }
- 
+    
+    .introInfo{
+    background-color: rgba(0, 0, 0, 0.001);
+    width: 95%;
+    }
+
+    
     .projects {
         flex-direction: column;
         align-items: center;
@@ -299,6 +328,7 @@ div>p {
 .interests{
     flex-direction: column;
     justify-content: space-around;
+    height: 200vh;
 }
 .likes > div{
     width: 50vw;
