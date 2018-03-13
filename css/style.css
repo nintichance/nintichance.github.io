@@ -5,8 +5,6 @@ body {
 }
 
 hr {
-    /* margin-top: 20px;
-    margin-bottom: 20px; */
     width: 60%;
     border: 0;
     border-top: 2px solid #63CCFF;
@@ -52,9 +50,6 @@ header>h1 {
     padding: 0;
     margin: 0;
 }
-
-
-
 
 .button {
     margin: 25px;
@@ -144,18 +139,10 @@ header {
     margin-bottom: 50px;
 }
 .pitch{
-    width: 50%;
+    width: 75%;
 }
 
-/* .space {
-    height: 30vh;
-    font-size: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 100px;
-} */
+
 .experience{
     margin-top: 75px;
     width: 30vw;
@@ -174,7 +161,6 @@ header {
 }
 
 .likes > div {
-    margin-bottom: 75px;
     width: 30vw;
     height: 65px;
     background-color: #ffe463;
@@ -193,11 +179,11 @@ header {
 .interests {
     height: 80vh;
     width: 100vw;
-    background-color: #62CCFF;
+    /* background-color: #62CCFF; */
     font-family: 'Open Sans', sans-serif;
     background-size: cover;
     display: flex;
-    flex-direction: column;
+    
     justify-content: center;
     align-items: center;
     background-attachment: fixed;
@@ -272,12 +258,6 @@ div>p {
     margin: 0px;
 }
 
-@media only screen and (max-width: 330px) {
-    header {
-        font-size: .75em;
-    }
-}
-
 @media only screen and (max-width: 800px) {
     header {
         height: 10vh;
@@ -294,6 +274,40 @@ div>p {
     .projectRight, 
     .projectLeft{
         flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .projectPitch{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* .projects
+.projectRight
+.projectLeft
+.pitch */
+.pitch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.experience{
+    width: 50vw;
+}
+
+.interests{
+    flex-direction: column;
+    justify-content: space-around;
+}
+.likes > div{
+    width: 50vw;
+}
+
+    a > .img {
+        width: 25vw;
+        padding: 0;
+        margin: 0;
     }
  
     .button {
@@ -375,6 +389,11 @@ div>p {
     }
 }
 
+@media only screen and (max-width: 330px) {
+    header {
+        font-size: .75em;
+    }
+}
 
 /*       Just setting CSS for the page   */
 
