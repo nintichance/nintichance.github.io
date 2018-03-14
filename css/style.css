@@ -112,7 +112,7 @@ header {
 }
 
 h3 > span {
-    color: white;
+    color: black;
     font-size: 1.5em;
     font-family: 'Londrina Outline', cursive;
 }
@@ -121,7 +121,7 @@ h3 > span {
     background-color: rgba(87,87,235, 0.25);
     border-radius: 4px;
     margin-left: 25px;
-    color: white;
+    color: black;
 }
 
 .projects {
@@ -306,8 +306,11 @@ div>p {
     .introInfo{
     background-color: rgba(0, 0, 0, 0.001);
     width: 95%;
+    color: white;
     }
-
+    h3 > span {
+        color: white;
+    }
     
     .projects {
         flex-direction: column;
@@ -438,6 +441,9 @@ div>p {
 @media only screen and (max-width: 330px) {
     header {
         font-size: .75em;
+    }
+    .projectRightOne, .projectLeftOne {
+        height: 150vh;
     }
 }
 
