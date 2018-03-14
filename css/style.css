@@ -183,10 +183,13 @@ h3 > span {
     color: white;
 }
 
-.likes{
+.likes {
     width: 100vw;
     display: flex;
     justify-content: flex-end;
+}
+.experience{
+    margin-top: 100px;
 }
 
 .likes > div {
