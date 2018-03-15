@@ -457,7 +457,14 @@ div>p {
     header {
         font-size: .75em;
     }
-    
+    .introInfo {
+        padding-top: 25px;
+        font-size: .75em;
+        margin: 0;
+    }
+    .footerNav{
+        margin: 0;
+    }
     
 }
 
