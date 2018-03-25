@@ -468,6 +468,7 @@ div>p {
 @media only screen and (max-width: 330px) {
     header {
         font-size: .75em;
+        width: 100vw;
     }
     .introInfo {
         padding-top: 25px;
@@ -477,29 +478,28 @@ div>p {
     .footerNav{
         margin: 0;
     }
-    
+    *{
+        margin: 0;
+        padding: 0;
+    }
 }
 
-/*       Just setting CSS for the page   */
-
+/* BUTTONS */
 * {
     margin: 0;
     padding: 0;
   }
-  
   html,
   css {
     width: 100%;
     height: 100%;
   }
-  
   .position {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     margin-top: 15%;
   }
-  
   #workarea {
     position: absolute;
     width: 100%;
@@ -507,7 +507,6 @@ div>p {
     background-color: #1e1a3e;
     font-family: Raleway;
   }
-  
   #personal {
     color:white;
     text-decoration:none;
@@ -515,15 +514,6 @@ div>p {
     bottom:15px;
     right:2%;
   }
-  /*    start code for the actual button:         */
-  
-  
-  /*   
-      Spot is the span on the inside of the href that
-      fills the parent and makes the hover and link work
-      for the entire div
-  */
-  
   .spot {
     position: absolute;
     width: 100%;
@@ -531,29 +521,16 @@ div>p {
     top: 0;
     left: 0;
   }
-  /*
-      This is the outer svg wrapper that the SVG itself will 
-      fill. Multiple svg-wrapper classes can be put side by side.
-  */
-  
   .svg-wrapper {
     margin-top: 0;
     position: relative;
     width: 150px;
-    /*make sure to use same height/width as in the html*/
     height: 40px;
     display: inline-block;
     border-radius: 3px;
     margin-left: 5px;
     margin-right: 5px
   }
-  /*
-    This is where we define the fill, color, thickness,
-    and stroke pattern of the SVG when there is no hover.
-    The dasharray and offset together define the line position
-    under the words. Here's also where the transition speed is set.
-  */
-  
   #shape {
     stroke-width: 6px;
     fill: transparent;
@@ -562,30 +539,68 @@ div>p {
     stroke-dashoffset: -220;
     transition: 1s all ease;
   }
-  /* 
-      Pushing the text up into the SVG. Without this the
-      text would be below the div's.
-  */
-  
   #text {
     margin-top: -35px;
     text-align: center;
   }
-  
   #text a {
     color: black;
     text-decoration: none;
     font-weight: 100;
     font-size: 1.1em;
   }
-  /* 
-      Changing the shape on hover. I change the color of the stroke,
-  make it thinner, then set it to again wrap around the entire parent element.
-  */
-  
   .svg-wrapper:hover #shape {
     stroke-dasharray: 50 0;
     stroke-width: 3px;
     stroke-dashoffset: 0;
     stroke: #06D6A0;
   }
+  /* In View Animation */
+  .animation-element {
+    opacity: 0;
+    position: relative;
+  }
+  
+  .animation-element.slide-left {
+    opacity: 0;
+    -moz-transition: all 500ms linear;
+    -webkit-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    transition: all 500ms linear;
+    -moz-transform: translate3d(-100px, 0px, 0px);
+    -webkit-transform: translate3d(-100px, 0px, 0px);
+    -o-transform: translate(-100px, 0px);
+    -ms-transform: translate(-100px, 0px);
+    transform: translate3d(-100px, 0px, 0px);
+  }
+  
+  .animation-element.slide-left.in-view {
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+  }
+   
+  .animation-element.slide-right {
+    opacity: 0;
+    -moz-transition: all 500ms linear;
+    -webkit-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    transition: all 500ms linear;
+    -moz-transform: translate3d(100px, 0px, 0px);
+    -webkit-transform: translate3d(100px, 0px, 0px);
+    -o-transform: translate(100px, 0px);
+    -ms-transform: translate(100px, 0px);
+    transform: translate3d(100px, 0px, 0px);
+  }
+  
+  .animation-element.slide-right.in-view {
+    opacity: 1;
+    -moz-transform: translate3d(0px, 0px, 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate3d(0px, 0px, 0px);
+  } 
