@@ -62,7 +62,7 @@ header>h1 {
     font-size: 14px;
     background-color: #63CCFF;
     font-weight: 700;
-    color: black;
+    color: white;
     border: 0;
     border: 1px solid white;
     box-shadow: 0 10px 10px rgba(0, 0, 0, .08);
@@ -77,7 +77,7 @@ header>h1 {
 
 a {
     text-decoration: none;
-    color: #1e1517;
+    color: white;
 }
 
 nav {
@@ -92,7 +92,7 @@ header {
     width: 100vw;
     height: 10vh;
     background-color: rgba(255, 255, 255, 0.088);
-    color: #1e1517;
+    color: white;
     position: fixed;
     margin-bottom: 100px;
     box-shadow: 0 0 5px 0 gray;
@@ -195,6 +195,7 @@ h3 > span {
     display: flex;
     flex-direction: column;
 }
+
 .stack {
     width: 50%;
     height: auto;
@@ -203,6 +204,10 @@ h3 > span {
 .big {
     width: 100%;
     height: auto;  
+}
+
+.shape{
+    height: 80vh;
 }
 
 .stackImage {
@@ -342,9 +347,21 @@ div>p {
     }
     .intro {
         background: none;
-        background-color: #62CCFF;
+        background-color: rgba(255, 0, 217, 0.673);
         align-items: center;
         height: 85vh;
+    }
+    .stack {
+        width: 100%;
+        height: auto;
+    }
+    .big-pics {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .shape{
+        width: 10%;
+        height: auto;
     }
     
     .introInfo{
@@ -380,7 +397,7 @@ div>p {
 }
 .experience{
     width: 50vw;
-    background-color: white;
+    background-color: (255, 255, 255, 0.088);
 }
 
 .interests{
@@ -578,7 +595,7 @@ div>p {
     text-align: center;
   }
   #text a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: 100;
     font-size: 1.1em;
