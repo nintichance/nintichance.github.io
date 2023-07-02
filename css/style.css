@@ -1,9 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    /* font-family: 'Open Sans', sans-serif; */
     font-family: 'Fauna One', serif;
-
+    background-color: black;
 }
 
 hr {
@@ -16,6 +15,7 @@ hr {
     margin-right: 100px;
 
 }
+
 .hrLeft{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -91,7 +91,7 @@ header {
     align-items: center;
     width: 100vw;
     height: 10vh;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.088);
     color: #1e1517;
     position: fixed;
     margin-bottom: 100px;
@@ -99,9 +99,9 @@ header {
 }
 
 .intro {
-    height: 70vh;
+    height: 80vh;
     width: 100vw;
-    background: url("https://i.imgur.com/T7PuI9C.png");
+    background: url("nintiwav.png");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -132,7 +132,6 @@ h3 > span {
     width: 100vw;
     margin-top: 100px;
     margin-bottom: 100px;
-    background-color: white;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -175,7 +174,7 @@ h3 > span {
     margin-top: 75px;
     width: 30vw;
     height: 65px;
-    background-color: #ffe463;
+    background-color: rgba(255, 255, 255, 0.088);;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,17 +191,52 @@ h3 > span {
     margin-top: 100px;
 }
 
+.pics {
+    display: flex;
+    flex-direction: column;
+}
+.stack {
+    width: 50%;
+    height: auto;
+}
+
+.big {
+    width: 100%;
+    height: auto;  
+}
+
+.stackImage {
+    display: block;
+    margin: 5px;
+    width: 25%;
+    height: auto;
+}
+
+.big-pics{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.stack1{
+    display: flex;
+    justify-content: space-between;
+}
+.stack2{
+    display: flex;
+    justify-content: space-between;
+}
+
 .likes > div {
     width: 30vw;
     height: 65px;
-    background-color: #ffe463;
+    background-color: rgba(255, 255, 255, 0.088);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
     color: white;
 }
-
 
 .space2 {
     height: 50vh;
@@ -211,7 +245,6 @@ h3 > span {
 .interests {
     height: 80vh;
     width: 100vw;
-    /* background-color: #62CCFF; */
     background-size: cover;
     display: flex;
     font-family: 'Handlee', cursive;
@@ -243,7 +276,7 @@ footer {
     align-items: center;
     width: 100vw;
     height: 6vh;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.098);
     color: white;
 }
 
@@ -347,6 +380,7 @@ div>p {
 }
 .experience{
     width: 50vw;
+    background-color: white;
 }
 
 .interests{
