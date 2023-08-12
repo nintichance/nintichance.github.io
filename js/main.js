@@ -31,14 +31,6 @@ $(document).ready(function() {
 
   }
 
-  const stack1 = document.getElementsByClassName('stack1')
-  const stack2 = document.getElementsByClassName('stack2')
-  // stack1.onClick(()=>{
-  //     window.location.href = "nintiwav.com/art.html"
-  // })
-  // stack2.onClick(()=>{
-  //   window.location.href = "nintiwav.com/cosplay.html"
-  // })
 
   //on or scroll, detect elements in view
   $(window).on('scroll resize', function() {
