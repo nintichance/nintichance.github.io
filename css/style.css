@@ -239,8 +239,7 @@ background-color: "#e4229c"
 .sales{
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
