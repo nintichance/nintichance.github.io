@@ -36,8 +36,143 @@
         </nav>
     </header>
     <div class="sales">
-        <!-- GOING TO THE CINNAMOROLL -->
+        <!-- FREE COLORING PAGES -->
         <div class="sale-item top-sale">
+            <div id='product-component-1698850909459'></div>
+            <script type="text/javascript">
+            /*<![CDATA[*/
+            (function () {
+            var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+            if (window.ShopifyBuy) {
+                if (window.ShopifyBuy.UI) {
+                ShopifyBuyInit();
+                } else {
+                loadScript();
+                }
+            } else {
+                loadScript();
+            }
+            function loadScript() {
+                var script = document.createElement('script');
+                script.async = true;
+                script.src = scriptURL;
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                script.onload = ShopifyBuyInit;
+            }
+            function ShopifyBuyInit() {
+                var client = ShopifyBuy.buildClient({
+                domain: 'ac5b3c.myshopify.com',
+                storefrontAccessToken: '1ee140f1276b9e55758fb5264b7d43f9',
+                });
+                ShopifyBuy.UI.onReady(client).then(function (ui) {
+                ui.createComponent('product', {
+                    id: '8799285084474',
+                    node: document.getElementById('product-component-1698850909459'),
+                    moneyFormat: '%24%7B%7Bamount%7D%7D',
+                    options: {
+            "product": {
+                "styles": {
+                "product": {
+                    "@media (min-width: 601px)": {
+                    "max-width": "calc(25% - 20px)",
+                    "margin-left": "20px",
+                    "margin-bottom": "50px"
+                    }
+                },
+                "button": {
+                    ":hover": {
+                    "background-color": "#e4229c"
+                    },
+                    "background-color": "#fd26ad",
+                    ":focus": {
+                    "background-color": "#e4229c"
+                    }
+                }
+                },
+                "text": {
+                "button": "Add to cart"
+                }
+            },
+            "productSet": {
+                "styles": {
+                "products": {
+                    "@media (min-width: 601px)": {
+                    "margin-left": "-20px"
+                    }
+                }
+                }
+            },
+            "modalProduct": {
+                "contents": {
+                "img": false,
+                "imgWithCarousel": true,
+                "button": false,
+                "buttonWithQuantity": true
+                },
+                "styles": {
+                "product": {
+                    "@media (min-width: 601px)": {
+                    "max-width": "100%",
+                    "margin-left": "0px",
+                    "margin-bottom": "0px"
+                    }
+                },
+                "button": {
+                    ":hover": {
+                    "background-color": "#e4229c"
+                    },
+                    "background-color": "#fd26ad",
+                    ":focus": {
+                    "background-color": "#e4229c"
+                    }
+                }
+                },
+                "text": {
+                "button": "Add to cart"
+                }
+            },
+            "option": {},
+            "cart": {
+                "styles": {
+                "button": {
+                    ":hover": {
+                    "background-color": "#e4229c"
+                    },
+                    "background-color": "#fd26ad",
+                    ":focus": {
+                    "background-color": "#e4229c"
+                    }
+                }
+                },
+                "text": {
+                "total": "Subtotal",
+                "button": "Checkout"
+                }
+            },
+            "toggle": {
+                "styles": {
+                "toggle": {
+                    "background-color": "#fd26ad",
+                    ":hover": {
+                    "background-color": "#e4229c"
+                    },
+                    ":focus": {
+                    "background-color": "#e4229c"
+                    }
+                }
+                }
+            }
+            },
+                });
+                });
+            }
+            })();
+            /*]]>*/
+            </script>
+        </div>
+        
+        <!-- GOING TO THE CINNAMOROLL -->
+        <div class="sale-item">
             <div id='product-component-1695043308465'></div>
             <script type="text/javascript">
             /*<![CDATA[*/
@@ -170,8 +305,9 @@
             /*]]>*/
             </script>
         </div>
+
         <!-- ENID IT WEDNESDAY -->
-        <div class="sale-item top-sale">
+        <div class="sale-item">
             <div id='product-component-1691895853754'></div>
             <script type="text/javascript">
             /*<![CDATA[*/
