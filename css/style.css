@@ -16,6 +16,86 @@ hr {
 
 }
 
+.review{
+    color: white;
+    font-size: 2vw;
+    width: 100vw;
+    height: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vw;
+}
+.reviewText{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.floatingImage{
+    width: 25vw;
+    height: 25vw;
+}
+.smallSpace{
+    height: 10vh;
+}
+.pictures{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 25vh;
+}
+.photoOne{
+    width: 25vw;
+    height: 25vw;
+    background-color: pink;
+    background: url("peridot.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15vw 15vw;
+}
+.photoTwo{
+    width: 25vw;
+    height: 25vw;
+    background-color: blue;
+    background: url("fairytail.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15vw 15vw;
+
+
+}
+.metrics{
+    color: white;
+    width: 100vw;
+    height: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.circleContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        font-size: 500px;
+    }
+}
+.circle{
+    background-image: url("circle.png");
+    background-repeat: no-repeat;
+    background-size: 15vw 15vw;
+    width: 15vw;
+    height: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.numbers{
+    font-size: 3vw;
+}
+
 .hrLeft{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -82,6 +162,13 @@ a {
 
 nav {
     margin-right: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+figcaption{
+    display: flex;
+    justify-content: center;
 }
 
 header {
@@ -130,7 +217,7 @@ h3 > span {
     align-items: center;
 }
 .sale-button-div {
-    background-color: rgba(4, 4, 49, 0.65);
+    /* background-color: rgba(4, 4, 49, 0.65); */
     width: 100vw;
     height: 25vh;
     display: flex;
@@ -300,7 +387,7 @@ background-color: "#e4229c"
 
 .space2 {
     height: 50vh;
-}
+} 
 
 .interests {
     height: 80vh;
@@ -386,12 +473,9 @@ div>p {
     margin: 0px;
 }
 
-
-
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 3000px){
    .sale-item{
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin: 5vh;
    }
    .top-sale{
     margin-top: 20vh;
@@ -400,7 +484,7 @@ div>p {
         margin-bottom: 10vh;
         height: 100%;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
     }    
 
@@ -416,19 +500,31 @@ div>p {
     }
 }
 
+
+
 @media only screen and (max-width: 800px) {
     header {
         height: 10vh;
     }
     .big{
         margin-top: 10vh;
-        ;
     }
     .intro {
         background: none;
         background-color: black;
-        align-items: center;
         height: 85vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        padding-top: 10vh;
+    }
+    .introWave{
+        width: 100%;
+        height: 100%;
+        background-image: url("IMG_6199.GIF");
+        background-size: 50vh;
+        background-position: 50%;
+        background-repeat: no-repeat;
     }
     .stack {
         width: 100%;
@@ -444,11 +540,13 @@ div>p {
     }
     
     .introInfo{
-    background-color: rgba(0, 0, 0, 0.001);
-    width: 95%;
-    color: white;
-    padding: 0;
+        margin-right: 40vw;
+        background-color: rgba(0, 0, 0, 0.001);
+        width: 50%;
+        color: white;
+        padding: 0;
     }
+
     h3 > span {
         color: white;
     }
@@ -512,6 +610,24 @@ div>p {
         width: 100vw;
         display: flex;
         justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .intro {
+        background: none;
+        background-color: black;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .introWave{
+        width: 100%;
+        height: 100%;
+    }
+    .introInfo{
+        width: 80%;
     }
 }
 
@@ -607,24 +723,36 @@ div>p {
 
 @media only screen and (max-width: 1300px) {
     .introInfo{
+     margin-right: 5vw;
+     width: 100%;
+     margin-left: 0;
      height: 36vh;
     }
  }
 
  @media only screen and (max-width: 1200px) {
     .introInfo{
+     margin-right: 5vw;
+     width: 100%;
+     margin-left: 0;
      height: 42vh;
     }
  }
 
 @media only screen and (max-width: 1100px) {
    .introInfo{
+ margin-right: 5vw;
+ width: 100%;
+ margin-left: 0;
     height: 45vh;
    }
 }
 
 @media only screen and (max-width: 1000px) {
     .introInfo{
+     margin-right: 5vw;
+     width: 100%;
+     margin-left: 0;
      height: 45vh;
     }
  }
@@ -634,6 +762,14 @@ div>p {
         font-size: .75em;
     }
 }
+@media only screen and (max-width: 500px) {
+    .introInfo {
+        padding-top: 25px;
+        font-size: .75em;
+        margin: 0;
+    }
+}
+
 @media only screen and (max-width: 330px) {
     header > h1{
         margin: 5px;
@@ -777,3 +913,135 @@ div>p {
     -ms-transform: translate(0px, 0px);
     transform: translate3d(0px, 0px, 0px);
   } 
+
+  @media only screen and (max-width: 675px) {
+    .introInfo{
+        width: 80%;
+    }
+}
+
+.topFooter{
+    padding-top: 12vh;
+    padding-bottom: 2vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.iconsTop {
+    height: 40px;
+    width: 40px;
+}
+
+@media only screen and (min-width: 675px) {
+  .brand-padding{
+    padding-top: 35vh;
+  }
+  .pictures{
+    padding-top: 13vh;
+  }
+}
+
+
+
+@media only screen and (max-width: 675px) {
+    .review{
+        color: white;
+        font-size: 4vw;
+        width: 100vw;
+        height: 25vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 25vw;
+    }
+    .reviewText{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .floatingImage{
+        width: 75vw;
+        height: 75vw;
+    }
+    .smallSpace{
+        height: 55vh;
+    }
+    .pictures{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 25vh;
+        padding-top: 50vw;
+        align-items: center;
+    }
+    .photoOne{
+        width: 75vw;
+        height: 75vw;
+        background-color: pink;
+        background: url("peridot.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 40vw 40vw;
+    }
+    .photoTwo{
+        width: 75vw;
+        height: 75vw;
+        background-color: blue;
+        background: url("fairytail.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 40vw 40vw;
+
+
+    }
+    .metrics{
+        color: white;
+        width: 100vw;
+        height: 75vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 150vw;
+        padding-bottom: 100vw;
+    }
+    .circleContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p {
+            font-size: 500px;
+        }
+    }
+    .circle{
+        background-image: url("circle.png");
+        background-repeat: no-repeat;
+        background-size: 40vw 40vw;
+        width: 40vw;
+        height: 40vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .numbers{
+        font-size: 8vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .smallSpace{
+       height: 40vh;
+    }
+   }
+@media only screen and (max-width: 450px) {
+    .smallSpace{
+       height: 38vh;
+    }
+   }
+
+
