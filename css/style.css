@@ -1042,6 +1042,55 @@ div>p {
     .smallSpace{
        height: 38vh;
     }
-   }
+}
 
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+        .big-pics{
+            width: 100vw;
+            height: 50vh;
+        }
+        .stack{
+            height: 80%;
+            width: auto;
+        }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+        .big-pics{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .stack{
+            width: 50%;
+            height: auto;
+        }
+}
+
+@media only screen 
+  and (min-device-width: 820px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+        .big-pics{
+            width: 100vw;
+            height: 75vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .stack{
+            width: 50%;
+            height: auto;
+        }
+}
 
