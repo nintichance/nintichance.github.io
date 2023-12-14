@@ -72,6 +72,7 @@ hr {
     align-items: center;
     justify-content: space-around;
 }
+
 .circleContainer{
     display: flex;
     flex-direction: column;
@@ -96,6 +97,30 @@ hr {
     font-size: 3vw;
 }
 
+.contentType{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.contentThemeImage {
+    width: 200px;
+    height: auto;
+}
+.heartImage {
+    width: 50px;
+    height: auto
+}
+.mediaKitVideos{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 100vw;
+}
+#mediaKitVideo{
+    /* width: 45%; */
+    padding: 2.5%;
+    height: 80%;
+}
 .hrLeft{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -929,6 +954,10 @@ div>p {
     justify-content: center;
 }
 
+.topFooterMediaKit {
+    padding-top: 25vh;
+}
+
 .iconsTop {
     height: 40px;
     width: 40px;
@@ -938,11 +967,7 @@ div>p {
   .brand-padding{
     padding-top: 35vh;
   }
-  .pictures{
-    padding-top: 13vh;
-  }
 }
-
 
 
 @media only screen and (max-width: 675px) {
