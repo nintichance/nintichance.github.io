@@ -24,7 +24,6 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5vw;
 }
 .reviewText{
     width: 50%;
@@ -116,11 +115,12 @@ hr {
     height: 100vh;
     width: 100vw;
 }
-#mediaKitVideo{
-    /* width: 45%; */
-    padding: 2.5%;
-    height: 80%;
+.mediaKitVideoContainer > p{
+    color: white;
+    display: flex;
+    justify-content: center;
 }
+
 .hrLeft{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -498,6 +498,40 @@ div>p {
     margin: 0px;
 }
 
+@media only screen and (min-width: 830px){
+    .mediaKitVideos{
+        display: flex;
+        justify-content: space-around;
+    }
+    .mediaKitVideoContainer{
+        padding: .5%;
+        height: 100%;
+    }
+    
+    #mediaKitVideo{
+        padding: .5%;
+        height: 75%;
+    }
+}
+
+@media only screen and (max-width: 830px){
+    .mediaKitVideos{
+        display: flex;
+        justify-content: space-around;
+        height: 350vh;
+    }
+    .mediaKitVideoContainer{
+        padding: .5%;
+        width: 100%
+    }
+    
+    #mediaKitVideo{
+        padding: .5%;
+        width: 100%;
+    }
+}
+
+    
 @media only screen and (max-width: 3000px){
    .sale-item{
     margin: 5vh;
@@ -999,7 +1033,7 @@ div>p {
         flex-direction: column;
         width: 100%;
         height: 25vh;
-        padding-top: 50vw;
+        padding-top: 110vw;
         align-items: center;
     }
     .photoOne{
@@ -1058,6 +1092,22 @@ div>p {
     }
 }
 
+@media only screen and (max-width: 440px) {
+    .metrics{
+        color: white;
+        width: 100vw;
+        height: 75vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 150vw;
+        padding-bottom: 100vw;
+    }
+    .bottomMetrics{
+        padding-top: 75vw;
+    }
+}
 @media only screen and (max-width: 500px) {
     .smallSpace{
        height: 40vh;
@@ -1083,6 +1133,26 @@ div>p {
             height: 80%;
             width: auto;
         }
+        .mediaKitVideos{
+            display: flex;
+            justify-content: space-around;
+        }
+        .mediaKitVideoContainer{
+            padding: .5%;
+            height: 100%;
+        }
+        
+        #mediaKitVideo{
+            padding: .5%;
+            height: 75%;
+        }    
+        
+        .mediaKitReview{
+            margin-top: 300vh;
+        }
+        
+        
+    
 }
 
 @media only screen 
