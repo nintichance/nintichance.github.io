@@ -63,7 +63,12 @@ hr {
 
 
 }
-
+.whoAmI {
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
 .topMetrics{ 
     padding-top: 25vh;
 } 
@@ -438,6 +443,12 @@ background-color: "#e4229c"
     flex-direction: column;
 }
 
+.homePageInterests {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+} 
+
 .rowOne,
 .rowTwo {
     display: flex;
@@ -516,6 +527,13 @@ div>p {
 }
 
 @media only screen and (max-width: 830px){
+    .whoAmI {
+        width: 100vw;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .mediaKitVideos{
         display: flex;
         justify-content: space-around;
@@ -1004,7 +1022,31 @@ div>p {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+    @media only screen and (max-height: 600px) {
+        .review{
+           padding-top: 50vw; 
+        }
+    }
+}
+@media only screen and (max-width: 430px) {
+    @media only screen and (max-height: 932px) {
+        .review{
+           padding-top: 0vw; 
+        }
+    }
+}
 
+@media only screen and (max-width: 1280px) {
+    @media only screen and (max-height: 800px) {
+        .review{
+           padding-top: 75vw; 
+        }
+        .metrics {
+            padding-top: 50vw;
+        }
+    }
+}
 @media only screen and (max-width: 675px) {
     .review{
         color: white;
@@ -1014,6 +1056,7 @@ div>p {
         display: flex;
         align-items: center;
         justify-content: center;
+        padding-top: 25vw;
         padding-bottom: 25vw;
     }
     .reviewText{
@@ -1068,6 +1111,15 @@ div>p {
         padding-top: 150vw;
         padding-bottom: 100vw;
     }
+
+    .homePageInterests {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+    } 
     .circleContainer{
         display: flex;
         flex-direction: column;
